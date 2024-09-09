@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lewis19K/Lewis19K.github.io.git"
+    "url": "git+https://github.com/Lewis19K/Portafolio.git"
   },
   "keywords": [],
   "author": "Luis Corrales",
-  "homepage": "https://github.com/Lewis19K/Lewis19K.github.io.git",
+  "homepage": "https://Lewis19K.github.io.git",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.1",
     "parcel": "^2.0.1",
