@@ -1,12 +1,12 @@
 {
-  "name": "simplefolio",
+  "name": "portafolio",
   "version": "1.0.1",
   "private": "true",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
+  "description": "Mi Portafolio Personal",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
   },
   "keywords": [],
   "author": "Luis Corrales",
-  "homepage": "https://Lewis19K.github.io.git",
+  "homepage": "https://Lewis19K.github.io/Portafolio",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.1",
     "parcel": "^2.0.1",
