@@ -1,12 +1,11 @@
 {
-  "name": "portafolio",
+  "name": "simplefolio",
   "version": "1.0.1",
   "private": "true",
   "description": "Mi Portafolio Personal",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build --public-url ./"
+    "build": "parcel build src/index.html --public-url ./"
   },
   "repository": {
     "type": "git",
