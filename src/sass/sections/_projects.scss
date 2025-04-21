@@ -46,6 +46,12 @@
 
       & p > a {
         color: $secondary-color;
+        text-decoration: underline;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $primary-color;
+        }
       }
     }
 
@@ -71,6 +77,11 @@
           border: 1px solid $light-grey;
           box-shadow: none;
           margin-bottom: 3.2rem;
+        }
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
         }
       }
     }

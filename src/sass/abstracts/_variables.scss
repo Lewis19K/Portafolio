@@ -1,15 +1,38 @@
-// COLORS
+// ======================
+// 🎨 COLORS
+// ======================
 $primary-color: #02aab0;
 $secondary-color: #00cdac;
 
-$white-color: #fff;
+$white-color: #ffffff;
 
 $dark-grey: #333333;
 $light-grey: #d2d2d2;
 
 $dark-blue-text: #272341; // For Headings
 
-// FONT SIZE
-$default-font-size: 1.6rem;
-$big-font-size: 4rem;
-$mid-font-size: 2.5rem;
+// ======================
+// 🔤 FONT SIZES
+// ======================
+$default-font-size: 1.6rem;  // 16px
+$small-font-size: 1.4rem;    // 14px
+$mid-font-size: 2.5rem;      // 25px
+$big-font-size: 4rem;        // 40px
+$xl-font-size: 6rem;         // 60px
+
+// ======================
+// 🧱 SPACING / GAPS
+// ======================
+$section-padding: 6rem;
+$element-margin: 3rem;
+$gap: 2rem;
+
+// ======================
+// 📱 BREAKPOINTS (for reference in JS or calc if needed)
+// ======================
+$bp-phone-xs: 320px;
+$bp-phone: 600px;
+$bp-tab-port-sm: 768px;
+$bp-tab-port: 900px;
+$bp-tab-land: 1200px;
+$bp-desktop: 1800px;

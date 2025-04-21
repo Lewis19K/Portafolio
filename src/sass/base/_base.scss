@@ -1,12 +1,38 @@
 html {
-  font-size: 62.5%;
+  font-size: 75%; // 1rem = 10px
 
+  // Para ScrollReveal u otras libs
   &.sr .load-hidden {
     visibility: hidden;
+  }
+
+  // Escalado de fuente para pantallas pequeñas
+  @include respond(phone) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include respond(phone-xs) {
+    font-size: 50%; // 1rem = 8px
   }
 }
 
 body {
+  overflow-x: hidden; /* Evitar desplazamiento horizontal */
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: $dark-grey;
+  background-color: $white-color;
+  line-height: 1.6;
   text-align: center;
+  font-size: $default-font-size;
+
+  @include respond(phone) {
+    line-height: 1.8;
+  }
+}
+
+/* Asegurar que las imágenes no se desborden */
+img {
+  max-width: 100%;
+  height: auto;
 }

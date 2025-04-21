@@ -5,7 +5,8 @@
   "description": "Mi Portafolio Personal",
   "source": "src/index.html",
   "scripts": {
-    "build": "parcel build src/index.html --public-url ./"
+    "build": "parcel build src/index.html --public-url ./",
+    "dev": "parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -15,8 +16,8 @@
   "author": "Luis Corrales",
   "homepage": "https://Lewis19K.github.io/",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.1",
-    "parcel": "^2.0.1",
+    "@parcel/transformer-sass": "^2.14.4",
+    "parcel": "^2.14.4",
     "prettier": "^2.4.1"
   },
   "dependencies": {

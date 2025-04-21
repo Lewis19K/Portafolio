@@ -1,53 +1,87 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
-h1 {
+// Títulos
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  color: $dark-blue-text;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
+h1 {
+  font-size: $big-font-size;
+
+  @include respond(tab-port) {
+    font-size: 3.2rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.6rem;
+  }
+}
+
+// Texto general
 p,
 a {
   font-family: "Montserrat", sans-serif;
   font-size: $default-font-size;
+  line-height: 1.6;
+
+  @include respond(phone) {
+    font-size: 1.4rem;
+  }
 }
 
+// Enlaces
 a,
 a:link,
 a:hover,
 a:visited,
 a:active {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
   transition: all 0.3s ease-in-out;
+  transform: translateY(-2px);
 }
 
+// Título de secciones
 .section-title {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 4.5rem;
   font-size: $big-font-size;
   font-weight: bold;
   text-transform: uppercase;
+  color: $dark-blue-text;
+
+  @include respond(tab-port) {
+    font-size: 3.2rem;
+  }
 
   @include respond(phone) {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
 }
 
-.dark-blue-text {
-  color: $dark-blue-text !important;
-}
-
+// Texto con color morado/gradient
 .text-color-main {
   @include supportColorForIE11();
 
-  // Responsive text purple style
   @include respond(phone) {
     background-image: none;
     -webkit-text-fill-color: $secondary-color;
+    color: $secondary-color;
   }
 
   &:hover {
     transform: translateX(2px);
   }
+}
+
+// Textos auxiliares
+.dark-blue-text {
+  color: $dark-blue-text !important;
 }

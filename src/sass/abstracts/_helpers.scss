@@ -1,4 +1,12 @@
 // Margins
 .mb-8 {
-  margin-bottom: 8rem !important;
+  margin-bottom: 4rem !important;
+
+  @media (min-width: 768px) {
+    margin-bottom: 6rem !important;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 8rem !important;
+  }
 }

@@ -1,28 +1,21 @@
 #hero {
   min-height: 100vh;
-  height: 100vh;
   display: flex;
   align-items: center;
-  border-bottom: 0px;
+  justify-content: center;
   background: $white-color;
-  font-weight: 400;
   color: $dark-blue-text;
+  font-weight: 400;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
+  z-index: 1;
 
-  // Set position sticky so the jumbotron stays fixed while you scroll.
-  // position: sticky;
-
-  // If you want to set a background image on the hero section, uncomment these with your custom image
-
-  /* background: url("/src/assets/[your-image].png");
+  // Uncomment and replace the path to add a background image
+  /* 
+  background: url("/src/assets/[your-image].png");
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
+  */
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
@@ -52,6 +45,8 @@
 
   .hero-cta {
     display: flex;
+    justify-content: flex-start;
+    gap: 2rem; // Added gap between the buttons or items
 
     @include respond(tab-port) {
       justify-content: center;
@@ -59,9 +54,19 @@
 
     & a {
       font-size: 2.4rem;
+      padding: 1.2rem 2.4rem;
+      border: 2px solid $dark-blue-text;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $white-color;
+      }
 
       @include respond(phone) {
         font-size: 2rem;
+        padding: 1rem 2rem;
       }
     }
   }
